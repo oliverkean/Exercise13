@@ -1,0 +1,154 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    align-items: center;
+    text-align: center;
+}
+
+/* mobile view */
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "head1"
+    "head2";
+    margin: 2px;
+}
+
+.head1{
+    background-color: aqua;
+    border: 2px solid black;
+    grid-area: head1;
+    line-height: 20vh;
+    margin: 2px;
+}
+.head2{
+    background-color: aqua;
+    border: 2px solid black;
+    grid-area: head2;
+    line-height: 20vh;
+    margin: 2px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 2px;
+}
+.article{
+    background-color: grey;
+    margin: 10px 2px;
+    border: 2px solid black;
+    height: 25vh;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 2px;
+}
+.sect1, .sect2, .sect3{
+    background-color: aquamarine;
+    margin: 2px;
+    border: 2px solid black;
+    height: 20vh;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 2px;
+}
+.footer1, .footer2, .footer3, .footer4{
+    background-color: cadetblue;
+    margin: 2px;
+    border: 2px solid black;
+    height: 20vh;
+}
+
+/* 760px view */
+@media screen and (min-width:760px){
+    .article{
+        background-color: grey;
+        margin: 10px 2px;
+        border: 2px solid black;
+        height: 50vh;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 2px;
+    }
+    .footer1, .footer2, .footer3, .footer4{
+        background-color: cadetblue;
+        margin: 2px;
+        border: 2px solid black;
+        height: 15vh;
+    }
+}
+
+/* 1024 px*/
+@media screen and (min-width: 1024px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "head1 head2";
+        margin: 2px;
+    }
+    
+    .head1{
+        background-color: aqua;
+        border: 2px solid black;
+        grid-area: head1;
+        line-height: 20vh;
+        margin: 2px;
+    }
+    .head2{
+        background-color: aqua;
+        border: 2px solid black;
+        grid-area: head2;
+        line-height: 20vh;
+        margin: 2px;
+    }
+
+    .article{
+        background-color: grey;
+        margin: 10px 2px;
+        border: 2px solid black;
+        height: 70vh;
+    }
+    section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        margin: 2px;
+    }
+    .sect1, .sect2, .sect3{
+        background-color: aquamarine;
+        border: 2px solid black;
+        height: 35vh;
+        margin: 20px 2px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+        margin: 2px;
+    }
+    .footer1, .footer2, .footer3, .footer4{
+        background-color: cadetblue;
+        margin: 2px;
+        border: 2px solid black;
+        height: 20vh;
+    }
+}
+
